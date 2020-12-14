@@ -15,14 +15,16 @@ screen_width, screen_height = screen.width, screen.height
 
 while True:
     
-    default_im = pyautogui.screenshot()
-    default_im = cv2.cvtColor(np.array(default_im), cv2.COLOR_RGB2BGR)
-    window_name = 'projector'
-    cv2.namedWindow(window_name, cv2.WND_PROP_FULLSCREEN)
-    cv2.moveWindow(window_name, screen.x - 1, screen.y - 1)
-    cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
-    cv2.imshow(window_name, default_im)
-    cv2.waitKey(0)
+# =============================================================================
+#     default_im = pyautogui.screenshot()
+#     default_im = cv2.cvtColor(np.array(default_im), cv2.COLOR_RGB2BGR)
+#     window_name = 'projector'
+#     cv2.namedWindow(window_name, cv2.WND_PROP_FULLSCREEN)
+#     cv2.moveWindow(window_name, screen.x - 1, screen.y - 1)
+#     cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
+#     cv2.imshow(window_name, default_im)
+#     cv2.waitKey(0)
+# =============================================================================
     
     a = win32api.GetKeyState(0x01)
     b = win32api.GetKeyState(0x02)
